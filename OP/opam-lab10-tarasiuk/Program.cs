@@ -19,7 +19,7 @@ internal static class Program
         Directory.CreateDirectory("results");
         var report = new Dictionary<string, object>();
         report["variant"] = new { N, K, a = N % 3, b = N % 4, c = N % 5 };
-        report["string_traps"] = StringExperiments.Run();
+        report["string_traps"] = StringExperiments.Run(text);
         report["unique_substring"] = RunSubstringBenchmarks(text);
         report["search"] = RunSearchCases(text);
         report["knapsack"] = RunKnapsack();
@@ -149,16 +149,18 @@ internal static class Algorithms
 
 internal static class StringExperiments
 {
-    public static object Run()
+    public static object Run(string prose)
     {
         var rows = new List<object>();
+        var sourceWord = prose.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries)
+            .First(word => word.Any(char.IsLetter));
+        var upperWord = sourceWord.ToUpperInvariant();
         foreach (var n in new[] { 10_000, 100_000 })
         {
             var plus = Time(() => { var s = ""; for (var i = 0; i < n; i++) s += "x"; return s.Length; });
             var builder = Time(() => { var b = new StringBuilder(); for (var i = 0; i < n; i++) b.Append('x'); return b.Length; });
-            var a = "Програмування"; var b = "ПРОГРАМУВАННЯ";
-            var lower = Time(() => { var nmatch = 0; for (var i = 0; i < n; i++) if (a.ToLower(CultureInfo.InvariantCulture) == b.ToLower(CultureInfo.InvariantCulture)) nmatch++; return nmatch; });
-            var ordinal = Time(() => { var nmatch = 0; for (var i = 0; i < n; i++) if (string.Equals(a, b, StringComparison.OrdinalIgnoreCase)) nmatch++; return nmatch; });
+            var lower = Time(() => { var nmatch = 0; for (var i = 0; i < n; i++) if (sourceWord.ToLower() == upperWord.ToLower()) nmatch++; return nmatch; });
+            var ordinal = Time(() => { var nmatch = 0; for (var i = 0; i < n; i++) if (string.Equals(sourceWord, upperWord, StringComparison.OrdinalIgnoreCase)) nmatch++; return nmatch; });
             rows.Add(new { operations = n, concat_ms = plus, string_builder_ms = builder, lowercase_compare_ms = lower, ordinal_ignore_case_ms = ordinal });
         }
         var words = new[] { "ґанок", "ґрунт", "гілка", "єдність", "їжак", "яблуко", "Ґудзик", "ґава", "знання", "Іван", "щастя", "човен", "юність", "файл", "хмара", "цукор", "світ", "річка", "пісня", "осінь" };

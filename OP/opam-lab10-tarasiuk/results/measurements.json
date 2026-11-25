@@ -10,17 +10,17 @@
     "timing": [
       {
         "operations": 10000,
-        "concat_ms": 6.418,
-        "string_builder_ms": 0.032,
-        "lowercase_compare_ms": 1.3061,
-        "ordinal_ignore_case_ms": 1.2061
+        "concat_ms": 5.8932,
+        "string_builder_ms": 0.0324,
+        "lowercase_compare_ms": 0.8379,
+        "ordinal_ignore_case_ms": 0.5464
       },
       {
         "operations": 100000,
-        "concat_ms": 635.8455,
-        "string_builder_ms": 0.1685,
-        "lowercase_compare_ms": 11.4075,
-        "ordinal_ignore_case_ms": 5.154
+        "concat_ms": 1484.728,
+        "string_builder_ms": 0.166,
+        "lowercase_compare_ms": 6.7932,
+        "ordinal_ignore_case_ms": 2.3148
       }
     ],
     "sorting": {
@@ -73,37 +73,37 @@
   "unique_substring": [
     {
       "chars": 1000,
-      "answer": 22,
-      "naive_ms": 0.1863,
-      "window_ms": 0.0486,
-      "ratio": 3.8333333333333335
+      "answer": 17,
+      "naive_ms": 0.1717,
+      "window_ms": 0.0491,
+      "ratio": 3.4969450101832993
     },
     {
       "chars": 10000,
-      "answer": 22,
-      "naive_ms": 1.5155,
-      "window_ms": 0.2651,
-      "ratio": 5.716710675216899
+      "answer": 18,
+      "naive_ms": 1.4964,
+      "window_ms": 0.2825,
+      "ratio": 5.296991150442478
     },
     {
       "chars": 50000,
       "answer": 22,
-      "naive_ms": 8.1821,
-      "window_ms": 1.2258,
-      "ratio": 6.6749061837167565
+      "naive_ms": 7.7731,
+      "window_ms": 1.2277,
+      "ratio": 6.331432760446363
     }
   ],
   "search": {
     "prose_present": {
       "word": "\u0411\u0435\u0440\u043A\u0443\u0442",
-      "index": 2309,
-      "comparisons": 2315,
-      "framework_index": 2309
+      "index": 2136,
+      "comparisons": 2142,
+      "framework_index": 2136
     },
     "prose_missing": {
       "word": "\u041D\u0435\u0432\u0438\u0433\u0430\u0434\u0430\u043D\u0435\u0421\u043B\u043E\u0432\u043E",
       "index": -1,
-      "comparisons": 317065,
+      "comparisons": 316890,
       "framework_index": -1
     },
     "repeated_near_match": {
@@ -147,12 +147,12 @@
       {
         "count": 15,
         "value": 359,
-        "elapsed_ms": 0.044
+        "elapsed_ms": 0.0435
       },
       {
         "count": 20,
         "value": 376,
-        "elapsed_ms": 0.1227
+        "elapsed_ms": 0.1221
       }
     ]
   }
