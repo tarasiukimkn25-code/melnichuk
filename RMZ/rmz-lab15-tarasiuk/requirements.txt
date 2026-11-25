@@ -1,0 +1,4 @@
+numpy
+pillow
+matplotlib
+imageio-ffmpeg

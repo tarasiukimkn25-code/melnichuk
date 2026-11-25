@@ -1,0 +1,168 @@
+{
+  "probe": {
+    "container": "matroska,webm",
+    "codec": "ffv1",
+    "width": 640,
+    "height": 352,
+    "resolution": "640×352",
+    "frame_rate": "30/1",
+    "pixel_format": "yuv420p",
+    "bit_rate": 15205174,
+    "duration": 5.0
+  },
+  "ladder": [
+    {
+      "crf": 18,
+      "path": "q18.mp4",
+      "size_bytes": 95937,
+      "size_kb": 93.6884765625,
+      "bitrate_kbps": 153.4992,
+      "seconds": 0.2328859170083888,
+      "psnr": 24.489333,
+      "ssim": 0.901125
+    },
+    {
+      "crf": 23,
+      "path": "q23.mp4",
+      "size_bytes": 60047,
+      "size_kb": 58.6396484375,
+      "bitrate_kbps": 96.0752,
+      "seconds": 0.22227025000029244,
+      "psnr": 24.497011,
+      "ssim": 0.902203
+    },
+    {
+      "crf": 28,
+      "path": "q28.mp4",
+      "size_bytes": 37464,
+      "size_kb": 36.5859375,
+      "bitrate_kbps": 59.9424,
+      "seconds": 0.23034041599021293,
+      "psnr": 24.520045,
+      "ssim": 0.904914
+    },
+    {
+      "crf": 33,
+      "path": "q33.mp4",
+      "size_bytes": 31529,
+      "size_kb": 30.7900390625,
+      "bitrate_kbps": 50.446400000000004,
+      "seconds": 0.21583566701156087,
+      "psnr": 24.533682,
+      "ssim": 0.903956
+    },
+    {
+      "crf": 40,
+      "path": "q40.mp4",
+      "size_bytes": 26474,
+      "size_kb": 25.853515625,
+      "bitrate_kbps": 42.3584,
+      "seconds": 0.21713000000454485,
+      "psnr": 24.789492,
+      "ssim": 0.899323
+    }
+  ],
+  "wrong": [
+    27.772366,
+    27.459209,
+    0.31315700000000035
+  ],
+  "wrong_stderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/mac/Documents/Codex/2026-11-25/new-chat/work/melnichuk/RMZ/rmz-lab16-tarasiuk/work/q40.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf63.1.100\n  Duration: 00:00:05.00, start: 0.000000, bitrate: 42 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 640x352, 38 kb/s, 30 fps, 30 tbr, 15360 tbn (default)\n    Metadata:\n      handler_name    : VideoHandler\n      encoder         : Lavc63.1.100 libx264\nInput #1, matroska,webm, from '/Users/mac/Documents/Codex/2026-11-25/new-chat/work/melnichuk/RMZ/rmz-lab16-tarasiuk/work/src.mkv':\n  Metadata:\n    ENCODER         : Lavf63.1.100\n  Duration: 00:00:05.00, start: 0.000000, bitrate: 15205 kb/s\n  Stream #1:0: Video: ffv1, yuv420p(tv, progressive), 640x352, 30 fps, 30 tbr, 1k tbn\n    Metadata:\n      ENCODER         : Lavc63.1.100 ffv1\n      DURATION        : 00:00:05.000000000\nStream mapping:\n  Stream #0:0 (h264) -> psnr\n  Stream #1:0 (ffv1) -> psnr\n  psnr:default -> Stream #0:0 (wrapped_avframe)\nPress [q] to stop, [?] for help\n[Parsed_psnr_0 @ 0x157618480] not matching timebases found between first input: 1/15360 and second input 1/1000, results may be incorrect!\nOutput #0, null, to 'pipe:':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf63.1.100\n  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 640x352, q=2-31, 200 kb/s, 30 fps, 30 tbn\n    Metadata:\n      encoder         : Lavc63.1.100 wrapped_avframe\n[Parsed_psnr_0 @ 0x157618480] PSNR y:25.814321 u:38.136924 v:38.848635 average:27.459209 min:23.221883 max:34.097622\n[null @ 0x157706330] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 149 >= 149\n[out#0/null @ 0x157705da0] video:63KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=  151 fps=0.0 q=-0.0 Lsize=N/A time=00:00:04.96 bitrate=N/A speed=36.7x elapsed=0:00:00.13    \n",
+  "codecs": [
+    {
+      "name": "H.264",
+      "codec": "libx264",
+      "crf": 18,
+      "size_bytes": 95937,
+      "size_kb": 93.6884765625,
+      "psnr": 24.489333,
+      "ssim": 0.901125,
+      "seconds": 0.22322816599626094
+    },
+    {
+      "name": "H.264",
+      "codec": "libx264",
+      "crf": 23,
+      "size_bytes": 60047,
+      "size_kb": 58.6396484375,
+      "psnr": 24.497011,
+      "ssim": 0.902203,
+      "seconds": 0.22091195799293928
+    },
+    {
+      "name": "H.264",
+      "codec": "libx264",
+      "crf": 28,
+      "size_bytes": 37464,
+      "size_kb": 36.5859375,
+      "psnr": 24.520045,
+      "ssim": 0.904914,
+      "seconds": 0.2271841659967322
+    },
+    {
+      "name": "H.265",
+      "codec": "libx265",
+      "crf": 20,
+      "size_bytes": 72511,
+      "size_kb": 70.8115234375,
+      "psnr": 24.500038,
+      "ssim": 0.90223,
+      "seconds": 0.39719395799329504
+    },
+    {
+      "name": "H.265",
+      "codec": "libx265",
+      "crf": 25,
+      "size_bytes": 46592,
+      "size_kb": 45.5,
+      "psnr": 24.517498,
+      "ssim": 0.904729,
+      "seconds": 0.36382466700160876
+    },
+    {
+      "name": "H.265",
+      "codec": "libx265",
+      "crf": 30,
+      "size_bytes": 34812,
+      "size_kb": 33.99609375,
+      "psnr": 24.556183,
+      "ssim": 0.903924,
+      "seconds": 0.34983995801303536
+    },
+    {
+      "name": "AV1",
+      "codec": "libsvtav1",
+      "crf": 25,
+      "size_bytes": 95917,
+      "size_kb": 93.6689453125,
+      "psnr": 24.488197,
+      "ssim": 0.901389,
+      "seconds": 0.8934120000049006
+    },
+    {
+      "name": "AV1",
+      "codec": "libsvtav1",
+      "crf": 35,
+      "size_bytes": 57457,
+      "size_kb": 56.1103515625,
+      "psnr": 24.485128,
+      "ssim": 0.901348,
+      "seconds": 0.8718954169889912
+    },
+    {
+      "name": "AV1",
+      "codec": "libsvtav1",
+      "crf": 45,
+      "size_bytes": 28962,
+      "size_kb": 28.283203125,
+      "psnr": 24.484771,
+      "ssim": 0.903259,
+      "seconds": 0.8815482500067446
+    }
+  ],
+  "sizes_at_39_5": {
+    "H.264": null,
+    "H.265": null,
+    "AV1": null
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "scene": "нерухома камера",
+    "sad_plain": 137894,
+    "sad_compensated": 137894,
+    "gain": 1.0,
+    "entropy_plain": 1.5720053680161121,
+    "entropy_compensated": 1.5720053680161121
+  },
+  {
+    "scene": "рівна панорама",
+    "sad_plain": 10904229,
+    "sad_compensated": 217606,
+    "gain": 50.10996479876474,
+    "entropy_plain": 7.845821984997599,
+    "entropy_compensated": 0.323911391992363
+  },
+  {
+    "scene": "тремтлива камера",
+    "sad_plain": 10832092,
+    "sad_compensated": 765589,
+    "gain": 14.148703808440299,
+    "entropy_plain": 7.828636638101557,
+    "entropy_compensated": 1.0320814215246294
+  },
+  {
+    "scene": "багато руху",
+    "sad_plain": 1419268,
+    "sad_compensated": 493630,
+    "gain": 2.8751656098697405,
+    "entropy_plain": 0.5192815402425868,
+    "entropy_compensated": 0.24043214716891015
+  }
+]

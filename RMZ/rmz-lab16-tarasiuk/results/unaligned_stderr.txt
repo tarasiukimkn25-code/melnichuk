@@ -1,0 +1,38 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/mac/Documents/Codex/2026-11-25/new-chat/work/melnichuk/RMZ/rmz-lab16-tarasiuk/work/q40.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.100
+  Duration: 00:00:05.00, start: 0.000000, bitrate: 42 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 640x352, 38 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.100 libx264
+Input #1, matroska,webm, from '/Users/mac/Documents/Codex/2026-11-25/new-chat/work/melnichuk/RMZ/rmz-lab16-tarasiuk/work/src.mkv':
+  Metadata:
+    ENCODER         : Lavf63.1.100
+  Duration: 00:00:05.00, start: 0.000000, bitrate: 15205 kb/s
+  Stream #1:0: Video: ffv1, yuv420p(tv, progressive), 640x352, 30 fps, 30 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc63.1.100 ffv1
+      DURATION        : 00:00:05.000000000
+Stream mapping:
+  Stream #0:0 (h264) -> psnr
+  Stream #1:0 (ffv1) -> psnr
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+Press [q] to stop, [?] for help
+[Parsed_psnr_0 @ 0x157618480] not matching timebases found between first input: 1/15360 and second input 1/1000, results may be incorrect!
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 640x352, q=2-31, 200 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc63.1.100 wrapped_avframe
+[Parsed_psnr_0 @ 0x157618480] PSNR y:25.814321 u:38.136924 v:38.848635 average:27.459209 min:23.221883 max:34.097622
+[null @ 0x157706330] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 149 >= 149
+[out#0/null @ 0x157705da0] video:63KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  151 fps=0.0 q=-0.0 Lsize=N/A time=00:00:04.96 bitrate=N/A speed=36.7x elapsed=0:00:00.13    

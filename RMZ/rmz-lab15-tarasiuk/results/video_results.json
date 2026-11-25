@@ -1,0 +1,26 @@
+{
+  "source": "demo.mp4",
+  "frames": 30,
+  "observations": [
+    {
+      "where": "плавний рух",
+      "frames": [
+        0,
+        1
+      ],
+      "gain": 1.0,
+      "entropy_before": 0.015556054302442685,
+      "entropy_after": 0.015556054302442685
+    },
+    {
+      "where": "найменший виграш",
+      "frames": [
+        28,
+        29
+      ],
+      "gain": 0.0,
+      "entropy_before": -0.0,
+      "entropy_after": -0.0
+    }
+  ]
+}
